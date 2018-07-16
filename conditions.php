@@ -162,8 +162,8 @@ else{
 }
   ?> -->
 
-<?php
+<!-- <?php
 $age = $_GET['age'];
 $genre = ($age >= 21 AND $age <=40 AND $_GET['genre'] == 'femme') ? "Bonjour, bienvenue parmi nous!" : "Désolé, vous ne remplissez pas les critères de sélection.";
 echo "$genre"
- ?>
+ ?> -->
