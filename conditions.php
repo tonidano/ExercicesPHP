@@ -45,7 +45,7 @@ echo "Bonne nuit! Il est $heure";}
  ?> -->
 
 
- <!-- <form method="GET" action="conditions.php">
+ <form method="GET" action="conditions.php">
    <h3>Etes-vous : </h3>
    <p><label><input type="radio" name="genre" value="homme"> un homme ? </label></p>
    <p><label><input type="radio" name="genre" value="femme"> une femme ? </label></p>
@@ -116,13 +116,13 @@ if($_GET['genre'] == 'homme' AND $_GET['anglais'] == 'no'){
 
   }
   }
-    ?> -->
+    ?>
 
     <!-- <form method="GET" action="conditions.php">
           <p><label>Votre note /20 <input type="number" name="note" value=""></label></p>
     </form>
 
-<?php
+ <?php
 if($_GET['note'] >= 1 AND  $_GET['note'] <= 3){
   echo "Ce travail est vraiment nul";
 }
