@@ -44,7 +44,7 @@ echo "Bonne nuit! Il est $heure";}
 
  ?> -->
 
-
+<!--
  <form method="GET" action="conditions.php">
    <h3>Etes-vous : </h3>
    <p><label><input type="radio" name="genre" value="homme"> un homme ? </label></p>
@@ -53,9 +53,9 @@ echo "Bonne nuit! Il est $heure";}
    <p><label><input type="radio" name="anglais" value="yes">Yes </label></p>
    <p><label><input type="radio" name="anglais" value="no">No </label></p>
    <p><label> Quel est votre âges ? <input type="number" name="age" value=""></label></p>
- </form>
+ </form> -->
 
-<?php
+<!-- <?php
 
 if($_GET['genre'] == 'homme' AND $_GET['anglais'] == 'no'){
 
@@ -116,7 +116,7 @@ if($_GET['genre'] == 'homme' AND $_GET['anglais'] == 'no'){
 
   }
   }
-    ?>
+    ?> -->
 
     <!-- <form method="GET" action="conditions.php">
           <p><label>Votre note /20 <input type="number" name="note" value=""></label></p>
@@ -146,12 +146,12 @@ echo "Police! Arrêtez ce tricheur!";
 }
  ?> -->
 
- <form method="GET" action="conditions.php">
+ <!-- <form method="GET" action="conditions.php">
    <h3>Etes-vous : </h3>
    <p><label><input type="radio" name="genre" value="homme"> un homme ? </label></p>
    <p><label><input type="radio" name="genre" value="femme"> une femme ? </label></p>
    <p><label> Quel est votre âges ? <input type="number" name="age" value=""></label></p>
- </form>
+ </form> -->
 
  <!-- <?php
 if($_GET['age'] >= 21 AND $_GET['age'] <=40 AND $_GET['genre'] == 'femme'){
@@ -167,3 +167,8 @@ $age = $_GET['age'];
 $genre = ($age >= 21 AND $age <=40 AND $_GET['genre'] == 'femme') ? "Bonjour, bienvenue parmi nous!" : "Désolé, vous ne remplissez pas les critères de sélection.";
 echo "$genre"
  ?> -->
+<?php
+ $genre = "H";
+ $bonjour = ($genre == 'H') ? "Bonjour monsieur!" : "Bonjour madame!";
+echo $bonjour;
+?>
